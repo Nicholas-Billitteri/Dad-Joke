@@ -1,0 +1,47 @@
+button
+{
+  background-color: #361974;
+  color: #fff;
+  border: 0px;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+}
+button:hover
+{
+  background-color: #30156f;
+  transition: 2s;
+  cursor : pointer;
+
+}
+.background {
+  background-image: url("https://thumbs.dreamstime.com/b/smile-face-seamless-pattern-vector-background-texture-eps-smile-face-seamless-pattern-vector-background-texture-126649085.jpg");
+  background-size: 20%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,100);
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 20px; /* 5px rounded corners */
+  outline: 10px solid blue;
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.joketext {
+  font-size: 200%;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #07a34d;
+  color: white;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Volunteer Form</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="background">
+
+  <div class="card">
+    <img src="https://media.gettyimages.com/videos/the-audience-in-a-theater-clap-their-hands-and-give-a-standing-as-video-id1219196823?s=640x640" alt="Crowd" style="width:50%">
+    <div class="container">
+      <h2>
+        Are you ready to hear a joke?
+      </h2>
+      <p class="joketext" id="output">What do you call a creature with 10 legs, 3 arms, it can fly, and it happens all the time?</p>
+      <button type="button" onclick='document.getElementById("edit").innerHTML = "What"'>What?</button>
+    </div>
+  </div>
+
+	<footer>
+	  <p>Made By: Nicholas Billitteri</p>
+	  <p><a href="https://mail.google.com/mail/u/0/#inbox">Contact Me</a></p>
+	</footer>
+
+	  <script>
+	    var btn = document.querySelector("button");
+	    var out = document.getElementById("output");
+	    btn.addEventListener("click", getWord);
+	    function getWord(){
+	      var theWord= [
+	        'Not a dog',
+	        'Your Mom',
+	        'Something very unpleasant',
+	        'To get to the other side',
+	        'Something that doesnt exist(duh)',
+	        'A nightmare',
+	      ];
+	      var wordNum = Math.floor(Math.random() * theWord.length);
+	      output.textContent = theWord[wordNum];
+	    }
+	</script>
+</body>
+</html>
